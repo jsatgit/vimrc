@@ -21,7 +21,7 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'bling/vim-airline'
 
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'SirVer/ultisnips'
 
@@ -30,6 +30,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
 
 Plugin 'reedes/vim-lexical'
+
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
@@ -76,9 +78,11 @@ let g:syntastic_cpp_include_dirs = ['/usr/local/include']
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 let g:syntastic_tex_checkers = [] 
+let g:syntastic_javascript_checkers = ['eslint'] 
 
 " airline
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
