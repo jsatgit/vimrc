@@ -64,9 +64,10 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " delimitmate
 let delimitMate_expand_cr = 1
+let delimitMate_matchpairs = "(:),[:],{:}"
 
 " closetag
-let g:closetag_filenames = '*.jsx,*.html,*.xml'
+let g:closetag_filenames = '*.jsx,*.js,*.html,*.xml'
 
 " incsearch
 map /  <Plug>(incsearch-forward)
